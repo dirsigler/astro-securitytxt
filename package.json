@@ -22,7 +22,10 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "prepublishOnly": "tsc"
+    "typecheck": "tsc --noEmit",
+    "audit": "npm audit",
+    "prepublishOnly": "npm run typecheck && tsc",
+    "publish:provenance": "npm publish --provenance --access public"
   },
   "keywords": [
     "astro",
