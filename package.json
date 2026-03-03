@@ -3,7 +3,7 @@
   "author": "Dennis Irsigler",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dirsigler/astro-securitytxt.git"
+    "url": "git+https://github.com/dirsigler/astro-securitytxt.git"
   },
   "version": "0.1.0",
   "description": "An Astro integration that automatically generates a RFC 9116 compliant security.txt file during build.",
