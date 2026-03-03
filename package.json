@@ -1,0 +1,44 @@
+{
+  "name": "astro-securitytxt",
+  "author": "Dennis Irsigler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dirsigler/astro-securitytxt.git"
+  },
+  "version": "0.1.0",
+  "description": "An Astro integration that automatically generates a RFC 9116 compliant security.txt file during build.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [
+    "astro",
+    "astro-integration",
+    "security.txt",
+    "rfc9116",
+    "securitytxt",
+    "well-known"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "astro": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "astro": "^5.0.0",
+    "typescript": "^5.7.0"
+  }
+}
